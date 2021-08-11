@@ -9,19 +9,18 @@ abstract class Vehiculo {
     
     public Vehiculo(){}
   
-    private String color, modelo,placas,marca, matricula,tipo,motor;
+    private String color, modelo,placas,marca,tipo,motor;
     private int puerta, asientos;
 
     public Vehiculo(String tipo) {
         this.tipo = tipo;
     }
 
-    public Vehiculo(String color, String modelo, String placas, String marca, String matricula, int puerta, int asientos) {
+    public Vehiculo(String color, String modelo, String placas, String marca, int puerta, int asientos) {
         this.color = color;
         this.modelo = modelo;
         this.placas = placas;
         this.marca = marca;
-        this.matricula = matricula;
         this.puerta = puerta;
         this.asientos = asientos;
     }
@@ -59,14 +58,7 @@ abstract class Vehiculo {
         this.marca = marca;
     }
 
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
-
+   
     public int getPuerta() {
         return puerta;
     }

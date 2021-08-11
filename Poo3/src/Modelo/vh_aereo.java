@@ -7,20 +7,21 @@ package Modelo;
  */
 public class vh_aereo extends Vehiculo{
     public vh_aereo(){}
-    private String Turbinas,tipo_avion;
-
-    public vh_aereo(String Turbinas, String tipo_avion, String color, String modelo, String placas, String marca, String matricula, int puerta, int asientos) {
-        super(color, modelo, placas, marca, matricula, puerta, asientos);
-        this.Turbinas = Turbinas;
-        this.tipo_avion = tipo_avion;
-    }
+    private String tipo_avion;
+private int llantas;
    
-    public String getTurbinas() {
-        return Turbinas;
-    }
+    
+    
 
-    public void setTurbinas(String Turbinas) {
-        this.Turbinas = Turbinas;
+     public void volar(){}
+    public void despegar(){}
+    public void aterrizar(){}
+    public void pAutomatico(){}
+
+    public vh_aereo(String tipo_avion, int llantas, String color, String modelo, String placas, String marca, int puerta, int asientos) {
+        super(color, modelo, placas, marca, puerta, asientos);
+        this.tipo_avion = tipo_avion;
+        this.llantas = llantas;
     }
 
     public String getTipo_avion() {
@@ -30,9 +31,15 @@ public class vh_aereo extends Vehiculo{
     public void setTipo_avion(String tipo_avion) {
         this.tipo_avion = tipo_avion;
     }
-    
-       public void volar(){}
-    public void despegar(){}
-    public void aterrizar(){}
-    public void pAutomatico(){}
+
+    public int getLlantas() {
+        return llantas;
+    }
+
+    public void setLlantas(int llantas) {
+        this.llantas = llantas;
+    }
+
+  
+
 }

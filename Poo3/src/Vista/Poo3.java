@@ -16,7 +16,7 @@ public class Poo3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        frm_Veh ver = new frm_Veh();
+        frm_uno ver = new frm_uno();
         ver.show();
         
     }

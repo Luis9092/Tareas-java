@@ -8,16 +8,24 @@ package Modelo;
 public class automovil extends vh_terrestre {
     public automovil(){}
     
-    private String tipo,altura,ancho;
+    private String tipo,velocidad;
     private int  llantas;
 
-    public automovil(String tipo, String altura, String ancho, int llantas, int capacidad, String color, String modelo, String placas, String marca, String matricula, int puerta, int asientos) {
-        super(capacidad, color, modelo, placas, marca, matricula, puerta, asientos);
+    public automovil(String tipo,String placas, String marca,String modelo, int llantas, int capacidad, String color,   int puerta,String velocidad,  int asientos) {
+        super(capacidad, color, modelo, placas, marca, puerta, asientos);
         this.tipo = tipo;
-        this.altura = altura;
-        this.ancho = ancho;
+        this.velocidad = velocidad;
         this.llantas = llantas;
     }
+
+  
+     public void arrancar(){}
+    public void acelerar(){}
+    public void frenar(){}
+    public void parar(){}
+    public void pAutomatico(){}
+    public void encender(){}
+    public void security(){}
 
     public String getTipo() {
         return tipo;
@@ -27,20 +35,12 @@ public class automovil extends vh_terrestre {
         this.tipo = tipo;
     }
 
-    public String getAltura() {
-        return altura;
+    public String getVelocidad() {
+        return velocidad;
     }
 
-    public void setAltura(String altura) {
-        this.altura = altura;
-    }
-
-    public String getAncho() {
-        return ancho;
-    }
-
-    public void setAncho(String ancho) {
-        this.ancho = ancho;
+    public void setVelocidad(String velocidad) {
+        this.velocidad = velocidad;
     }
 
     public int getLlantas() {
@@ -50,14 +50,4 @@ public class automovil extends vh_terrestre {
     public void setLlantas(int llantas) {
         this.llantas = llantas;
     }
-    
-    
-    public void arrancar(){}
-    public void acelerar(){}
-    public void frenar(){}
-    public void parar(){}
-    public void pAutomatico(){}
-    public void encender(){}
-    public void security(){}
-    
 }
